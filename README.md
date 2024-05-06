@@ -27,11 +27,11 @@
 * Seperate HTML, CSS, and JavaScript into their respective files
 * Javascript contains comments
 
-## Optional Featurs
+## Optional Features
 
 * Implemented a delete button that deletes the previous character
 * Implemented a +/- button that toggles the value between positive and negative
 * Percentage button divides the value by 100
 
-## > [!WARNING]
+> [!WARNING]
 > The calculator uses `eval()` indirectly to perform the operations. Eval() should never be used directly and without proper security measures in place. For proper code sanitization, I implemented a `String.search()` method that checks whether the users input is a valid calculator operation with the following regex `/^[-+]?[0-9]+\.?([-+*\/]?[0-9]+\.?)*$/`. If no match was found, meaning the user did not input a valid calculator operation, when the user presses enter, the values changes to INVALID and the eval function does not run.
